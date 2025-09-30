@@ -1,69 +1,30 @@
-:root {
-  --primary-color: #ff69b4;
-  --secondary-color: #4a0033;
-  --background-color: #fff0f9;
-  --font-family: "Arial", sans-serif;
-  --button-radius: 25px;
+.projects {
+  margin-top: 50px;
 }
 
-body {
-  font-family: var(--font-family);
-  background: var(--background-color);
-  color: var(--secondary-color);
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 600px;
-  margin: 100px auto;
-  padding: 30px;
-  background: white;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
+.projects h2 {
   color: var(--primary-color);
   margin-bottom: 20px;
 }
 
-p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+.projects ul {
+  list-style: none;
+  padding: 0;
 }
 
-.flag {
-  font-size: 1.5rem;
-  margin-right: 10px;
+.projects li {
+  margin: 15px 0;
 }
 
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.btn {
-  background: var(--primary-color);
-  color: white;
-  padding: 12px 25px;
-  border-radius: var(--button-radius);
+.projects a {
   text-decoration: none;
-  font-size: 1rem;
-  transition: background 0.3s;
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.2s;
 }
 
-.btn:hover {
-  background: var(--secondary-color);
-}
-
-.btn.secondary {
-  background: var(--secondary-color);
-}
-
-.btn.secondary:hover {
-  background: var(--primary-color);
+.projects a:hover {
+  color: var(--primary-color);
+  transform: scale(1.05);
 }
