@@ -130,14 +130,15 @@ body {
   margin-bottom: 15px;
 }
 
-/* Links inside project cards */
-.project-card a {
-  color: var(--primary-color);  /* 💖 project links pink */
-  font-weight: bold;
-  text-decoration: none;
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 }
 
-.project-card a:hover {
-  text-decoration: underline;
-  color: var(--secondary-color);
+.project-card img:hover {
+  transform: scale(1.02);
 }
