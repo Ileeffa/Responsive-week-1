@@ -1,12 +1,11 @@
-/* Define your CSS variables at the :root level */
 :root {
   --primary-color: #ff69b4;
   --secondary-color: #4a0033;
   --background-color: #fff0f9;
   --font-family: "Arial", sans-serif;
+  --button-radius: 25px;
 }
 
-/* Apply variables */
 body {
   font-family: var(--font-family);
   background: var(--background-color);
@@ -18,33 +17,52 @@ body {
 
 .container {
   max-width: 600px;
-  margin: 50px auto;
+  margin: 100px auto;
   padding: 30px;
   background: white;
-  border-radius: 12px;
+  border-radius: 15px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
   color: var(--primary-color);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 p {
   font-size: 1.2rem;
+  margin-bottom: 30px;
 }
 
-button {
+.flag {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
   background: var(--primary-color);
   color: white;
-  border: none;
-  padding: 12px 20px;
+  padding: 12px 25px;
+  border-radius: var(--button-radius);
+  text-decoration: none;
   font-size: 1rem;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: 0.3s;
+  transition: background 0.3s;
 }
 
-button:hover {
+.btn:hover {
   background: var(--secondary-color);
+}
+
+.btn.secondary {
+  background: var(--secondary-color);
+}
+
+.btn.secondary:hover {
+  background: var(--primary-color);
 }
