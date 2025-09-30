@@ -37,6 +37,18 @@
   color: var(--primary-color);
 }
 
+
+.nav-links a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
 /* 🔥 Header Navigation Bar */
 .site-header {
   display: flex;
