@@ -32,7 +32,7 @@ body {
 .site-header .logo {
   font-weight: bold;
   font-size: 1.3rem;
-  color: var(--secondary-color);
+  color: var(--primary-color);   /* 💖 make your name pink */
 }
 
 .nav-links {
@@ -51,7 +51,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: var(--primary-color);
+  color: var(--primary-color);   /* 💖 hover turns pink */
 }
 
 /* Containers */
@@ -74,7 +74,7 @@ body {
 }
 
 .btn {
-  background: var(--primary-color);
+  background: var(--primary-color);   /* 💖 pink button */
   color: white;
   padding: 12px 25px;
   border-radius: var(--button-radius);
@@ -98,7 +98,7 @@ body {
 /* Projects Section */
 .projects h2 {
   margin-bottom: 20px;
-  color: var(--primary-color);
+  color: var(--primary-color);   /* 💖 section title pink */
 }
 
 .project-grid {
@@ -109,7 +109,7 @@ body {
 
 .project-card {
   background: #fff0f9;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--primary-color);  /* 💖 pink border */
   border-radius: 12px;
   padding: 20px;
   text-align: center;
@@ -128,4 +128,16 @@ body {
 .project-card p {
   font-size: 0.95rem;
   margin-bottom: 15px;
+}
+
+/* Links inside project cards */
+.project-card a {
+  color: var(--primary-color);  /* 💖 project links pink */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+  color: var(--secondary-color);
 }
