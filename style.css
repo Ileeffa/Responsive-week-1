@@ -1,3 +1,7 @@
+body {
+  background: pink !important;
+  font-size: 30px !important;
+}
 /* 🔥 Header Navigation Bar */
 .site-header {
   display: flex;
