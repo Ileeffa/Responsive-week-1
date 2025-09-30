@@ -142,3 +142,66 @@ body {
 .project-card img:hover {
   transform: scale(1.02);
 }
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  /* Navigation stack */
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+  /* Container padding */
+  .container {
+    padding: 15px;
+  }
+
+  /* Buttons full-width on mobile */
+  .buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Project cards one per row */
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    margin-bottom: 20px;
+  }
+
+  .project-card img {
+    max-height: 200px; /* keep images smaller on mobile */
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Smaller phones */
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
