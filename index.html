@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Isabel Leeffers, a front-end developer based in Europe. Showcasing projects including AI Skincare Routine Generator, World Clock, and Weather App." />
     <title>Isabel Leeffers - Front-end Developer</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <!-- 🔥 Navigation Header -->
+    <!-- 🔥 Header Navigation -->
     <header class="site-header">
       <div class="logo">Isabel Leeffers</div>
       <nav>
@@ -20,54 +21,64 @@
       </nav>
     </header>
 
-    <!-- 🔥 Intro Section -->
-    <div class="container">
-      <h1>Oh Hi! I am Isabel Leeffers</h1>
+    <main>
+      <!-- 🔥 Intro Section -->
+      <section class="container">
+        <h1>Oh Hi! I am Isabel Leeffers</h1>
+        <p>
+          <span class="flag">🇵🇹</span> Front-end developer, based in Europe
+        </p>
+        <div class="buttons">
+          <a href="contact.html" class="btn">Contact Me</a>
+          <a href="about.html" class="btn secondary">About Me</a>
+        </div>
+      </section>
+
+      <!-- 🔥 Projects Section -->
+      <section class="container projects">
+        <h2>My Projects</h2>
+
+        <div class="project">
+          <img src="skincare.png" alt="AI Skincare Routine Generator project screenshot" class="project-img" />
+          <div class="project-info">
+            <h3>🌸 Skincare Routine Generator</h3>
+            <p>A personalized skincare routine generator powered by AI.</p>
+            <div class="project-buttons">
+              <a href="https://comfy-moonbeam-4b15cb.netlify.app/" target="_blank" class="btn">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="worldclock.png" alt="World Clock project screenshot" class="project-img" />
+          <div class="project-info">
+            <h3>🕒 World Clock</h3>
+            <p>A responsive world clock that shows time across multiple cities.</p>
+            <div class="project-buttons">
+              <a href="https://polite-medovik-605a03.netlify.app/" target="_blank" class="btn">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="weather.png" alt="Weather App project screenshot" class="project-img" />
+          <div class="project-info">
+            <h3>⛅ Weather App</h3>
+            <p>A weather app with live forecasts powered by an API.</p>
+            <div class="project-buttons">
+              <a href="https://aquamarine-mousse-cee386.netlify.app/" target="_blank" class="btn">View Project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 🔥 Footer -->
+    <footer>
       <p>
-        <span class="flag">🇵🇹</span> Front-end developer, based in Europe
+        Coded with ♡ by <strong>Isabel Leeffers</strong>.  
+        Open-sourced on <a href="https://github.com/Ileeffa" target="_blank">GitHub</a>.
       </p>
-      <div class="buttons">
-        <a href="contact.html" class="btn">Contact Me</a>
-        <a href="about.html" class="btn secondary">About Me</a>
-      </div>
-    </div>
-
-    <!-- 🔥 Projects Section -->
-    <div class="container projects">
-      <h2>My Projects</h2>
-
-      <div class="project">
-        <img src="skincare.png" alt="AI Skincare Routine Generator" class="project-img" />
-        <div class="project-info">
-          <h3>🌸 Skincare Routine Generator</h3>
-          <p>A personalized skincare routine generator powered by AI.</p>
-          <div class="project-buttons">
-            <a href="https://comfy-moonbeam-4b15cb.netlify.app/" target="_blank" class="btn">View Project</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project">
-        <img src="worldclock.png" alt="World Clock" class="project-img" />
-        <div class="project-info">
-          <h3>🕒 World Clock</h3>
-          <p>A responsive world clock that shows time across multiple cities.</p>
-          <div class="project-buttons">
-            <a href="https://polite-medovik-605a03.netlify.app/" target="_blank" class="btn">View Project</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project">
-        <img src="weather.png" alt="Weather App" class="project-img" />
-        <div class="project-info">
-          <h3>⛅ Weather App</h3>
-          <p>A weather app with live forecasts powered by an API.</p>
-          <div class="project-buttons">
-            <a href="https://aquamarine-mousse-cee386.netlify.app/" target="_blank" class="btn">View Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    </footer>
   </body>
 </html>
