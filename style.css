@@ -16,7 +16,7 @@ body {
   line-height: 1.6;
 }
 
-/* 🔥 Header Navigation Bar */
+/* 🔥 Header Navigation */
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -106,7 +106,7 @@ body {
   text-align: center;
 }
 
-/* Side-by-side project layout */
+/* Project cards - Flexbox */
 .project {
   display: flex;
   align-items: center;
@@ -144,6 +144,21 @@ body {
   gap: 15px;
 }
 
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /* ✅ Responsive for mobile */
 @media (max-width: 768px) {
   .site-header {
@@ -176,6 +191,7 @@ body {
   }
 }
 
+/* Smallest screens */
 @media (max-width: 480px) {
   h1 {
     font-size: 1.5rem;
